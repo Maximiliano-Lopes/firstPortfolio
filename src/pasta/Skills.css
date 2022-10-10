@@ -294,7 +294,7 @@
     }
     #LogoPucrsDEV object{
         padding: 0vw;
-        clip-path: url(https://drive.google.com/file/d/19Fvh6rw7xp9Kk3QX6_1Uu6Er_JoAd7r5/view)
+        pointer-events: none;
     }
     
 }
