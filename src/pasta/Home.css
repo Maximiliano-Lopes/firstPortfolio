@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,400&family=&display=swap');
+
+* {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1b1131;
+    transition-duration: 0.5s;
+    font-size: 2vh;
+}
+
+@media screen  and (min-width:290px) and (max-width:450px) {
+    #body{
+        background-image: url("../images/fundo.jpg");
+        
+            background-position-x: 10%;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(10%);
+    }
+    #emailIcon,
+    #linkedinIcon,
+    #githubIcon,
+    #whatsappIcon
+    {
+        display: none;
+    }
+    
+    #sideBar.active {
+        margin-left: 0;
+        width: 100vw;
+        height: 12vh;
+        padding-bottom: 3vh;
+        border-bottom: 2px solid black ;
+        display: flex;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 2vh;
+        background: linear-gradient(
+      to bottom, 
+      #915bfd 62%,#8353e2 38%
+    );
+
+    }
+    #sideBar.active ul li{
+        display: inline-block;
+        text-decoration: none;
+        padding-right: 1vw;
+        margin-left: 2vw;
+        
+        
+    }
+    #sideBar.active ul{
+        text-decoration: none;
+        transition-delay: 1s;
+    }
+    #sideBar ul{
+        margin-top: -1vh;
+    }
+    #sideBar.active ul li a{
+        text-decoration: none;
+    }
+    #sideBarTitle.active {
+        margin-top: 2vh;
+        margin-left: 20vw;
+        font-size: 5vh;
+    }
+    #sideBarTitle {
+        letter-spacing: 1vw;
+        margin-top: 2vh;
+        margin-left: 9vw;
+        font-size: 5vh;
+        color: white;
+        text-shadow: 1px 2px 1px black;
+    }
+    #toggle{
+        position: absolute;
+
+        background-color: none;
+        background-size: 8vw;
+        background-position-x: 65%;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        transform: rotate(0deg);
+        transition: 1s;
+       
+        width: 3vh;
+        height: 3vh;
+        margin-top: 3vh;
+        margin-left: 90vw;
+        
+
+        background: linear-gradient(
+      to bottom, 
+      #3D0E61, #3D0E61 20%, 
+      #915bfd 20%, #915bfd 40%, 
+      #3D0E61 40%, #3D0E61 60%, 
+      #915bfd 60%, #915bfd 80%, 
+      #3D0E61 80%, #3D0E61 100%
+    );
+    }
+    #sideBar ul li{
+        display: none;
+    }
+    #sideBar{
+        margin-left: 0;
+        width: 100vw;
+        height: 6vh;
+        padding-bottom: 3vh;
+        border-bottom: 2px solid black ;
+        display: flex;
+        transition: 0.5s;
+        font-size: 3vh;
+        font-family: 'Josefin Sans', sans-serif;
+        background-color: #915bfd;
+    }
+    #toggle.active{
+        background: #ffffff00;
+        transition: 1s;
+        margin-top: 3vh;
+    }
+    #toggle.active::before,
+    #toggle.active::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: #3D0E61;
+        margin-top: 2vh;
+    }
+    
+    #toggle.active::before {
+        transform: rotate(45deg);
+    }
+    
+    #toggle.active::after {
+        transform: rotate(-45deg);
+    }
+    .circle-image {
+        z-index: 2;
+        position: absolute;
+        margin-top: 2vh;
+        margin-left: 60vw;
+        display: inline-flex;
+        border-radius: 100%;
+        border: 1px solid black;
+    }
+
+    .circle-image img {
+        border-radius: 100%;
+        width: 30vw;
+        border: 2px solid #915bfd;
+        
+    }
+    #cardBoard{
+        padding: 1vw;
+        display: initial;
+        z-index: 1;
+        position: absolute;
+        text-align: justify;
+        margin-top: 20vh;
+        margin-left: 5vw;
+        width: 70vw;
+        height: 35vh;
+        background-color: #915bfd;
+        border-radius: 10%;
+        box-shadow: 5px 5px rgb(56, 56, 56);
+    }
+
+    #cardBoard div {
+        margin-top: 1vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        
+        color: black;
+    }
+
+    #cardBoard div p {
+        font-family: 'Josefin Sans', sans-serif;
+        
+        font-size: 2vh;
+        color: black;
+    }
+    #cardBoard div #txtIntro {
+        text-align: left;
+        font-size: 1.8vh;
+        color: rgb(10, 10, 10);
+    }
+
+    #cardBoard div h1{
+        font-size: 4vh;
+        margin-left: 5vw;
+        color: black;
+    }
+
+    #cardBoard div ul{
+        margin-top: 0%;
+        margin-left: 10vw;
+        display: inline-flex;
+        width: 4vh;
+        list-style: none;
+    }
+    #cardBoard div ul li img{ 
+        width: 4.3vh;
+        list-style: none;
+    }
+    #cardBoard div ul li #HtmlIcon{ 
+        margin-right: -0.7vh;
+        list-style: none;
+    }
+    #cardBoard div ul li #JsIcon{ 
+        width: 3vh;
+    
+    }
+    #RodaPeSide{
+        display: none;
+    }
+
+}
+
+
+
+
+/* Área para PC tela pequena*/
+@media screen and (min-width:1300px) and (max-width: 1700px) {
+    #body{
+        background-image: url("../images/fundo.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(2px);
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #sideBar {
+        z-index: 2;
+        position: relative;
+        margin-left: 0px;
+        width: 15vw;
+        height: 99vh;
+        padding: 10px 10px;
+        background-color: #f5f1fcd5;;
+        border-right: 1px solid black;
+        display: block;
+        transition-duration: 0.6s;
+        font-family: 'Josefin Sans', sans-serif;
+        border-radius: 0%;
+    }
+
+    #sideBar ul {
+        margin-top: 16vh;
+    }
+
+    #sideBar ul li {
+        list-style: none;
+        font-weight: 100;
+        margin-left: -1vw;
+        border-bottom: 2px solid #915bfd;
+        transition: 0.6s;
+        color: #301d55;
+    }
+
+    #sideBar.active ul li {
+        list-style: none;
+        line-height: 180%;
+        font-weight: 100;
+        margin-left: -11vw;
+        transition: 0.5s;
+        border-bottom: none;
+        color: #301d55;
+    }
+
+    #sideBar ul li a {
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: 100;
+        line-height: 200%;
+        font-size: 6vh;
+        transition: 0.6s;
+    }
+
+    #sideBar.active {
+        margin-left: -12vw;
+        background-color: #8c56f8cb;
+        transition: 0.8s;
+        border-radius: 40%;
+        
+    }
+    #icones-redes{
+        margin-left: -2vw;
+          
+          
+      }
+    #icones-redes ul img{
+      width: 3vw;
+      padding-left: 5.4vw;  
+        
+    }
+
+    #sideBarTitle {
+        font-size: 27pt;
+        vertical-align: bottom;
+        text-align: center;
+        color: white;
+        padding: 1%;
+        line-height: 150%;
+        margin-top: 4vh;
+        margin-left: 0vw;
+        background-color: #6d43c2;;
+        width: 100%;
+        border: none;
+        border-radius: 6px;
+        box-shadow: -4px 4px 1px 2px black;
+        transition: 0.6s;
+    }
+
+    #sideBarTitle.active {
+        margin-left: -100px;
+
+    }
+
+    #icones-redes ul li a {
+        border: none;
+        text-decoration: none;
+
+    }
+
+    #icones-redes ul li {
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 6vh;
+        margin-left: -5vw;
+        
+        
+    }
+    #RodaPeSide.active{
+        transition: 0.8s;
+        font-size: 1.5vh;
+        margin-top: -2vh;
+        margin-left: 0vw;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.527);
+    }
+    #RodaPeSide{
+        transition: 0.8s;
+        font-size: 1.5vh;
+        text-align: center;
+        margin-left: -15vw;
+        color: rgba(0, 0, 0, 0.527);
+    }
+
+    #emailIcon,
+    #linkedinIcon,
+    #githubIcon,
+    #whatsappIcon {
+        width: 50px;
+        padding: 0;
+        margin-right: 0%;
+    }
+
+    #toggle {
+        z-index: 3;
+        position: absolute;
+        background-image: url("../images/deixou.png");
+        background-color: #ffffffc5;
+        background-size: 22px;
+        background-position: 56%;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+
+        border: 4px solid;
+        border-radius: 100%;
+        width: 2%;
+        height: 4%;
+        margin-top: 50vh;
+        margin-left: 15vw;
+        transition: 0.6s;
+        
+    }
+
+    #toggle.active {
+        margin-left: 3vw;
+        transition: 0.8s;
+        transform: rotate(0deg);
+    }
+
+    .circle-image {
+        position: absolute;
+        margin-top: -100vh;
+        margin-left: 75vw;
+        display: inline-flex;
+        border-radius: 100%;
+        border: 4px rgb(19, 19, 19) solid;
+        width: max-content;
+        height: max-content;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    .circle-image img {
+        border-radius: 100%;
+        width: 14vw;
+        border: 5px solid #915bfd;
+        transition: 0.5s;
+    }
+
+
+    #cardBoard {
+        z-index: 1;
+        border: 1px rgb(20, 20, 20) solid;
+        position: absolute;
+        margin-top: -80vh;
+        margin-left: 25vw;
+        width: 60vw;
+        height: 70vh;
+        background-color: #915bfda9;
+        border-radius: 50px;
+        
+    }
+
+    #cardBoard div {
+        
+        margin-left: 5vw;
+        margin-right: 5vw;
+        color: #ffffff;
+    }
+
+    #cardBoard div #tituloHello {
+        margin-top: 10vh;
+        font-size: 8vh;
+    }
+    #cardBoard div p {
+        margin-top: 5vh;
+        font-size: 3vh;
+    }
+    #cardBoard div ul{
+        margin-top: 0;
+        display: inline-flex;
+        width: 4vh;
+        color: #ffffff;
+        list-style: none;
+    }
+    #cardBoard div ul li img{ 
+        width: 10vh;
+        margin-right: 0.5vh;
+        list-style: none;
+    }
+    #cardBoard div ul li #HtmlIcon{ 
+        width: 10vh;
+        margin-right: -1vh;
+        list-style: none;
+    }
+    #cardBoard div p{ 
+        color: #ebebebe7;
+    }
+    #cardBoard div ul li #JsIcon{ 
+        width: 7vh;
+        margin-right: 1vh;
+    }
+}
+
+
+
+
+
+
+
+
+/* Área para PC Grande*/
+@media screen and (min-width: 1800px) {
+    #body{
+        background-image: url("../images/fundo.jpg");
+        
+            background-size: 100%;
+            background-repeat: no-repeat;
+            backdrop-filter: blur(2px);
+    }
+    #sideBar {
+        z-index: 2;
+        position: relative;
+        margin-left: 0px;
+        width: 15vw;
+        height: 99vh;
+        padding: 10px 10px;
+        background-color: #f5f1fcd5;;
+        border-right: 1px solid black;
+        display: block;
+        transition-duration: 0.6s;
+        font-family: 'Josefin Sans', sans-serif;
+        border-radius: 0%;
+    }
+
+    #sideBar ul {
+        margin-top: 16vh;
+    }
+
+    #sideBar ul li {
+        list-style: none;
+        font-weight: 100;
+        margin-left: -1vw;
+        border-bottom: 2px solid #915bfd;
+        transition: 0.6s;
+        color: #301d55;
+    }
+
+    #sideBar.active ul li {
+        list-style: none;
+        line-height: 180%;
+        font-weight: 100;
+        margin-left: -11vw;
+        transition: 0.5s;
+        border-bottom: none;
+        color: #301d55;
+    }
+
+    #sideBar ul li a {
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-weight: 100;
+        line-height: 190%;
+        font-size: 25pt;
+        transition: 0.6s;
+    }
+
+    #sideBar.active {
+        margin-left: -12vw;
+        background-color: #8c56f8cb;
+        transition: 0.8s;
+        border-radius: 40%;
+        
+    }
+    #icones-redes ul{
+      width: 15vw;
+        
+        
+    }
+
+    #sideBarTitle {
+        font-size: 27pt;
+        vertical-align: bottom;
+        text-align: center;
+        color: white;
+        padding: 1%;
+        line-height: 150%;
+        margin-top: 4vh;
+        margin-left: 0vw;
+        background-color: #6d43c2;;
+        width: 100%;
+        border: none;
+        border-radius: 6px;
+        box-shadow: -4px 4px 1px 2px black;
+        transition: 0.6s;
+    }
+
+    #sideBarTitle.active {
+        margin-left: -100px;
+
+    }
+
+    #icones-redes ul li a {
+        border: none;
+        text-decoration: none;
+
+    }
+
+    #icones-redes ul li {
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 15vh;
+        margin-left: -5vw;
+        
+        
+    }
+    #RodaPeSide.active{
+        transition: 0.8s;
+        font-size: 1.5vh;
+        margin-top: -2vh;
+        margin-left: 0vw;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.527);
+    }
+    #RodaPeSide{
+        transition: 0.8s;
+        font-size: 1.5vh;
+        text-align: center;
+        margin-left: -15vw;
+        color: rgba(0, 0, 0, 0.527);
+    }
+
+    #emailIcon,
+    #linkedinIcon,
+    #githubIcon,
+    #whatsappIcon {
+        width: 50px;
+        padding: 0;
+        margin-right: 0%;
+    }
+
+    #toggle {
+        z-index: 3;
+        position: absolute;
+        background-image: url("../images/deixou.png");
+        background-color: #ffffffc5;
+        background-size: 22px;
+        background-position: 56%;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        transform: rotate(180deg);
+
+        border: 4px solid;
+        border-radius: 100%;
+        width: 2%;
+        height: 4%;
+        margin-top: 50vh;
+        margin-left: 15vw;
+        transition: 0.6s;
+        
+    }
+
+    #toggle.active {
+        margin-left: 3vw;
+        transition: 0.8s;
+        transform: rotate(0deg);
+    }
+
+    .circle-image {
+        position: absolute;
+        margin-top: -100vh;
+        margin-left: 75vw;
+        display: inline-flex;
+        border-radius: 100%;
+        border: 4px rgb(19, 19, 19) solid;
+        width: max-content;
+        height: max-content;
+        transition: 0.5s;
+        z-index: 2;
+    }
+
+    .circle-image img {
+        border-radius: 100%;
+        width: 14vw;
+        border: 5px solid #915bfd;
+        transition: 0.5s;
+    }
+
+
+    #cardBoard {
+        z-index: 1;
+        border: 1px rgb(20, 20, 20) solid;
+        position: absolute;
+        margin-top: -80vh;
+        margin-left: 25vw;
+        width: 60vw;
+        height: 70vh;
+        background-color: #915bfda9;
+        border-radius: 50px;
+        
+    }
+
+    #cardBoard div {
+        
+        margin-left: 5vw;
+        margin-right: 5vw;
+        color: #ffffff;
+    }
+
+    #cardBoard div #tituloHello {
+        margin-top: 10vh;
+        font-size: 8vh;
+    }
+    #cardBoard div p {
+        margin-top: 5vh;
+        font-size: 3vh;
+    }
+    #cardBoard div ul{
+        margin-top: 0;
+        display: inline-flex;
+        width: 4vh;
+        color: #ffffff;
+        list-style: none;
+    }
+    #cardBoard div ul li img{ 
+        width: 10vh;
+        margin-right: 0.5vh;
+        list-style: none;
+    }
+    #cardBoard div ul li #HtmlIcon{ 
+        width: 10vh;
+        margin-right: -1vh;
+        list-style: none;
+    }
+    #cardBoard div p{ 
+        color: #ebebebe7;
+    }
+    #cardBoard div ul li #JsIcon{ 
+        width: 7vh;
+        margin-right: 1vh;
+    }
+}

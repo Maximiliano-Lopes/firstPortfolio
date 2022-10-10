@@ -1,0 +1,153 @@
+@media screen and (min-width:290px) and (max-width:450px) {}
+
+@media screen and (min-width:1200px) and (max-width: 1700px) {
+    #CardBoardProjects {
+        padding: 0;
+        width: 85vw;
+        height: 75vh;
+        background-color: #6d43c291;
+        display: inline-flex;
+        border: 2px solid black;
+        border-radius: 100px 0px 0px 100px;
+        position: absolute;
+        margin-left: 15%;
+        margin-top: -80vh;
+        box-shadow: 5px 5px rgb(36, 36, 36);
+    }
+
+    #CardBoardProjects::after {
+        content: "<PROJECTS/>";
+        color: #ebebebe7;
+        text-shadow: 2px 2px rgba(103, 36, 129, 0.925);
+        transition: 1s;
+        margin-left: 5%;
+        margin-top: -4.5%;
+        transition-delay: 0.5s;
+        font-size: 8vh;
+    }
+
+    #CardBoardProjects:hover:after {
+        content: "<PROJECTS/>";
+        color: rgba(88, 26, 146, 0.925);
+        text-shadow: 2px 2px #ebebebe7;
+        margin-left: 30%;
+        transition: 1s;
+        transition-delay: 0.5s;
+        margin-top: -4.5%;
+        font-size: 8vh;
+    }
+    #CardBoardProjects ul{
+        position: absolute;
+        margin-left: 25%;
+        color: #dbdbdbe7;
+        font-size: 5vh;
+        text-shadow: 5px 1px #301d55;
+        list-style: none;
+    }
+
+    #CardBoardProjects ul li{
+        list-style: none;
+        display: inline;
+    }
+    #ProjectsTitle{
+        color: #dbdbdbe7;
+        font-size: 5vh;
+        text-shadow: 5px 1px #301d55;
+    }
+    #EuroMilhoesLogo{
+        margin-top: 10vh;
+        margin-left: -20vh;
+        width: 14vw;
+    }
+    #MorseLogo{
+        position: absolute;
+        margin-top: 8vh;
+        margin-left: 10vh;
+        width: 8vw;
+        display: inline-block;
+    }
+    #MorseLogoLi::after{
+        content: "Morse translator";
+        color: #dbdbdbe7;
+        position: absolute;
+        font-size: 3vh;
+        margin-left: 10%;
+        margin-top: 7%;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    #CardBoardProjects {
+        padding: 0;
+        width: 85vw;
+        height: 75vh;
+        background-color: #6d43c291;
+        display: inline-flex;
+        border: 2px solid black;
+        border-radius: 100px 0px 0px 100px;
+        position: absolute;
+        margin-left: 15%;
+        margin-top: -80vh;
+        box-shadow: 5px 5px rgb(36, 36, 36);
+    }
+
+    #CardBoardProjects::after {
+        content: "<PROJECTS/>";
+        color: #ebebebe7;
+        text-shadow: 2px 2px rgba(103, 36, 129, 0.925);
+        transition: 1s;
+        margin-left: 5%;
+        margin-top: -4.5%;
+        transition-delay: 0.5s;
+        font-size: 8vh;
+    }
+
+    #CardBoardProjects:hover:after {
+        content: "<PROJECTS/>";
+        color: rgba(88, 26, 146, 0.925);
+        text-shadow: 2px 2px #ebebebe7;
+        margin-left: 30%;
+        transition: 1s;
+        transition-delay: 0.5s;
+        margin-top: -4.5%;
+        font-size: 8vh;
+    }
+    #CardBoardProjects ul{
+        position: absolute;
+        margin-left: 25%;
+        color: #dbdbdbe7;
+        font-size: 5vh;
+        text-shadow: 5px 1px #301d55;
+        list-style: none;
+    }
+
+    #CardBoardProjects ul li{
+        list-style: none;
+        display: inline;
+    }
+    #ProjectsTitle{
+        color: #dbdbdbe7;
+        font-size: 5vh;
+        text-shadow: 5px 1px #301d55;
+    }
+    #EuroMilhoesLogo{
+        margin-top: 10vh;
+        margin-left: -20vh;
+        width: 14vw;
+    }
+    #MorseLogo{
+        position: absolute;
+        margin-top: 8vh;
+        margin-left: 10vh;
+        width: 8vw;
+        display: inline-block;
+    }
+    #MorseLogoLi::after{
+        content: "Morse translator";
+        color: #dbdbdbe7;
+        position: absolute;
+        font-size: 3vh;
+        margin-left: 10%;
+        margin-top: 7%;
+    }
+}
