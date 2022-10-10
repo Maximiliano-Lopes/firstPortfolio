@@ -124,7 +124,7 @@ function Skills() {
                         <a href="https://www.ipmaia.pt/pt/ensino/oferta-formativa/licenciaturas/tecnologias-informacao-web-multimedia" target="_blank"><img src={IpMaiaLogo} id="LogoIpmaia"/></a>
                         <p id="textoDevTheDevs">Certificate obtained:<br/>
                             <a href="https://www.pucrs.br/devs/#o-programa" target="_blank" id="LogoPucrs"><img src={LogoPucRS}/></a>
-                            <a href="https://drive.google.com/file/d/19Fvh6rw7xp9Kk3QX6_1Uu6Er_JoAd7r5/view" target="_blank" id="LogoPucrsDEV"><object data={LogoDEVs} style="pointer-events: none;"></object></a>
+                            <a href="https://drive.google.com/file/d/19Fvh6rw7xp9Kk3QX6_1Uu6Er_JoAd7r5/view" target="_blank" id="LogoPucrsDEV"><object data={LogoDEVs}></object></a>
                             </p>
                         
                         </li>
