@@ -1,4 +1,70 @@
-@media screen and (min-width:290px) and (max-width:450px) {}
+@media screen and (min-width:290px) and (max-width:480px) {
+    #CardBoardContacts{
+        padding: 0vw;
+        display: initial;
+        z-index: 1;
+        position: absolute;
+        text-align: justify;
+        margin-top: 15vh !important;
+        margin-left: 5vw;
+        width: 90vw;
+        height: 40vh;
+        background-color: #915bfd;
+        border-radius: 10%;
+        box-shadow: 5px 5px rgb(56, 56, 56);
+    }
+    #CardBoardContacts::after{
+        content: "<PROJECTS />";
+        color: #ebebebe7;
+        text-shadow: 2px 2px rgba(103, 36, 129, 0.925);
+        position: absolute;
+        margin-left: 19vw;
+        margin-top: -42vh;
+        font-size: 4vh;
+    }
+    
+    #CardBoardContacts div {
+        margin-top: 1vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+        
+        color: black;
+    }
+    #CardBoardContacts ol li {
+        list-style: none;
+        display: inline;
+    }
+    #CardBoardContacts li a img{
+        width: 20vw;
+        margin-right: 10vw;
+    }
+    #CardBoardContacts li #EmailImg{
+        width: 15vw;
+    }
+    #CardBoardContacts li #GitImg{
+        margin-top: 2vh;
+        margin-left: -6vw;
+        width: 25vw;
+        display: block;
+        float: left;
+    }
+    #CardBoardContacts li #WhatsImg{
+        width: 39vw;
+        display: inline;
+    }
+    #CardBoardContacts li #LinkedinImg{
+        width: 35vw;
+        
+    }
+    #CardBoardContacts p {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 3vh;
+        text-align: center;
+        margin-left: -5%;
+        padding: 0vw;
+        color: black;
+    }
+}
 
 @media screen and (min-width:1200px) and (max-width: 1700px) {
     #CardBoardContacts {

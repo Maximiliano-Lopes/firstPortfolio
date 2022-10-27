@@ -18,12 +18,17 @@ import { Link } from "react-router-dom";
 function Home() {
   /* CSS scripts */
   function Remover(){
-    const toggle = document.getElementById("toggle")
-    const sideBar = document.getElementById("sideBar")
-    const sideBarTitle = document.getElementById("sideBarTitle")
+    let toggle = document.getElementById("toggle")
+    let sideBar = document.getElementById("sideBar")
+    let sideBarTitle = document.getElementById("sideBarTitle")
+    let IconesRedesCelular = document.getElementById("IconesRedesCelular")
 
-    var w = window.innerWidth
-    if (w < 500) {
+    var windowSize = window.innerWidth
+    if (windowSize > 500) {
+      IconesRedesCelular.classList.remove("active")
+    
+    }
+    if (windowSize < 500) {
       toggle.classList.remove("active")
       sideBarTitle.classList.remove("active")
       sideBar.classList.remove("active")
@@ -54,6 +59,7 @@ function Home() {
    
   
   }
+  
 
   return (
     <div className="App" onLoad={Remover}>
@@ -113,7 +119,25 @@ I developed this site so you can see some of my projects and promote my career a
               <li><img src={ReactIcon}/></li>
             </ul>
          </div>         
-      </div>  
+      </div>
+      <span id='IconesRedesCelular' className='active'>
+        <ul>
+                <li>
+                  <a href="mailto:maxlopes365@gmail.com" target="_blank"><img src={emailIcon} id="emailIcon" alt='Email'/></a>
+                </li>
+                <li>
+                <a href="https://www.linkedin.com/in/maximilianomarqueslopes/" target="_blank"><img src={linkedinIcon} id="linkedinIcon" alt='Linkedin'/></a>
+                  
+                </li>
+                <li>
+                <a href="https://github.com/Monster1001" target="_blank"><img src={githubIcon} id="githubIcon" alt='Github'/></a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=351933725264&text=Ol%C3%A1,%20gostaria%20de%20conversar%20com%20voc%C3%AA!" target="_blank"><img src={whatsappIcon} id="whatsappIcon" alt="Whatsapp"/></a> 
+                </li>
+              </ul>
+              <p id='RodaPeSideCelular'>Maximiliano Lopes @2022-09</p>
+      </span>  
     </div>
   );
 }

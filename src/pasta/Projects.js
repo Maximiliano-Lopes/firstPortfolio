@@ -99,6 +99,24 @@ function Projects() {
           </ul>
         </div>
       </div>
+      <span id='IconesRedesCelular' className='active'>
+        <ul>
+                <li>
+                  <a href="mailto:maxlopes365@gmail.com" target="_blank"><img src={emailIcon} id="emailIcon" alt='Email'/></a>
+                </li>
+                <li>
+                <a href="https://www.linkedin.com/in/maximilianomarqueslopes/" target="_blank"><img src={linkedinIcon} id="linkedinIcon" alt='Linkedin'/></a>
+                  
+                </li>
+                <li>
+                <a href="https://github.com/Monster1001" target="_blank"><img src={githubIcon} id="githubIcon" alt='Github'/></a>
+                </li>
+                <li>
+                  <a href="https://api.whatsapp.com/send?phone=351933725264&text=Ol%C3%A1,%20gostaria%20de%20conversar%20com%20voc%C3%AA!" target="_blank"><img src={whatsappIcon} id="whatsappIcon" alt="Whatsapp"/></a> 
+                </li>
+              </ul>
+              <p id='RodaPeSideCelular'>Maximiliano Lopes @2022-09</p>
+      </span>
     </div>
   )
 }

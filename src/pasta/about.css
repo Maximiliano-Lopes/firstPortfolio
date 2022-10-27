@@ -1,288 +1,61 @@
-@media screen  and (min-width:290px) and (max-width:450px) {
+@media screen  and (min-width:290px) and (max-width:480px) {
     #body{
         background-image: url("../images/fundo.jpg");
-        
-            background-position-x: 10%;
-            background-repeat: no-repeat;
-            backdrop-filter: blur(10%);
-    }
+        background-position-x: 10%;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(10%);
+}
     #emailIcon,
     #linkedinIcon,
     #githubIcon,
-    #whatsappIcon,
-    #cardBoard {
+    #whatsappIcon
+    {
         display: none;
     }
     
-    #sideBar.active {
-        margin-left: 0;
-        width: 100vw;
-        margin-top: -80vh;
-        height: 12vh;
-        padding-bottom: 3vh;
-        border-bottom: 2px solid black ;
-        display: flex;
-        font-family: 'Josefin Sans', sans-serif;
-        font-size: 2vh;
-        background: linear-gradient(
-      to bottom, 
-      #915bfd 62%,#8353e2 38%
-    );
-
-    }
-    #sideBar.active ul li{
-        display: inline-block;
-        text-decoration: none;
-        padding-right: 1vw;
-        margin-left: 2vw;
-        
-        
-    }
-    #sideBar.active ul{
-        text-decoration: none;
-        transition-delay: 1s;
-    }
-    #sideBar ul{
-        margin-top: -1vh;
-    }
-    #sideBar.active ul li a{
-        text-decoration: none;
-    }
-    #sideBarTitle.active {
-        margin-top: 2vh;
-        margin-left: 20vw;
-        font-size: 5vh;
-    }
-    #sideBarTitle {
-        letter-spacing: 1vw;
-        margin-top: 2vh;
-        margin-left: 9vw;
-        font-size: 5vh;
-        color: white;
-        text-shadow: 1px 2px 1px black;
-    }
-    #toggle{
-        position: absolute;
-
-        background-color: none;
-        background-size: 8vw;
-        background-position-x: 65%;
-        background-position-y: center;
-        background-repeat: no-repeat;
-        transform: rotate(0deg);
-        transition: 1s;
-       
-        width: 3vh;
-        height: 3vh;
-        margin-top: 3vh;
-        margin-left: 90vw;
-        
-
-        background: linear-gradient(
-      to bottom, 
-      #3D0E61, #3D0E61 20%, 
-      #915bfd 20%, #915bfd 40%, 
-      #3D0E61 40%, #3D0E61 60%, 
-      #915bfd 60%, #915bfd 80%, 
-      #3D0E61 80%, #3D0E61 100%
-    );
-    }
-    #sideBar ul li{
-        display: none;
-    }
-    #sideBar{
-        margin-left: 0;
-        width: 100vw;
-        height: 6vh;
-        padding-bottom: 3vh;
-        border-bottom: 2px solid black ;
-        display: flex;
-        transition: 0.5s;
-        font-size: 3vh;
-        font-family: 'Josefin Sans', sans-serif;
-        background-color: #915bfd;
-    }
-    #toggle.active{
-        background: #ffffff00;
-        transition: 1s;
-        margin-top: 3vh;
-    }
-    #toggle.active::before,
-    #toggle.active::after {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 4px;
-        background-color: #3D0E61;
-        margin-top: 2vh;
-    }
-    
-    #toggle.active::before {
-        transform: rotate(45deg);
-    }
-    
-    #toggle.active::after {
-        transform: rotate(-45deg);
-    }
-    
-    #cardBoard{
-        padding: 1vw;
-        z-index: 0;
-        display:inline-block;
+    #Corpo-About{
+        padding: 0vw;
+        display: initial;
+        z-index: 1;
         position: absolute;
         text-align: justify;
-        margin-top: 30vh;
+        margin-top: 15vh !important;
         margin-left: 5vw;
-        width: 70vw;
+        width: 90vw;
         height: 35vh;
         background-color: #915bfd;
         border-radius: 10%;
         box-shadow: 5px 5px rgb(56, 56, 56);
     }
-
-    #cardBoard div {
+    #Corpo-About::after{
+        content: "<ABOUT ME/>";
+        color: #ebebebe7;
+        text-shadow: 2px 2px rgba(103, 36, 129, 0.925);
+        position: absolute;
+        margin-left: 18%;
+        margin-top: -36vh;
+        font-size: 4vh;
+        transition: 1s;
+    }
+    
+    #Corpo-About div {
         margin-top: 1vw;
         margin-left: 3vw;
         margin-right: 3vw;
         
         color: black;
     }
+    #fundo-img img{
+        display: none;
+    }
 
-    #cardBoard div p {
+    #Corpo-About div p {
         font-family: 'Josefin Sans', sans-serif;
-        
-        font-size: 2vh;
+        font-size: 2.2vh;
+        padding: 1vw;
         color: black;
     }
-    #cardBoard div #txtIntro {
-        text-align: left;
-        font-size: 1.8vh;
-        color: rgb(10, 10, 10);
-    }
-
-    #cardBoard div h1{
-        font-size: 4vh;
-        margin-left: 5vw;
-        color: black;
-    }
-
-    #cardBoard div ul{
-        margin-top: -8%;
-        margin-left: 10vw;
-        display: inline-flex;
-        width: 4vh;
-        list-style: none;
-    }
-    #cardBoard div ul li img{ 
-        width: 4.3vh;
-        list-style: none;
-    }
-    #cardBoard div ul li #HtmlIcon{ 
-        margin-right: -0.7vh;
-        list-style: none;
-    }
-    #cardBoard div ul li #JsIcon{ 
-        width: 3vh;
     
-    }
-    #RodaPeSide{
-        display: none;
-    }
-
-    /* ÁREA PARA O CORPO ABOUT */
-    #cardBoard {
-        z-index: 1;
-        border: 1px rgb(20, 20, 20) solid;
-        position: absolute;
-        margin-top: 50vh;
-        margin-left: 25vw;
-        width: 60vw;
-        height: 70vh;
-        background-color: #915bfda9;
-        border-radius: 50px;
-        
-    }
-
-    #cardBoard div {
-        
-        margin-left: 5vw;
-        margin-right: 5vw;
-        color: #ffffff;
-    }
-
-    #cardBoard div #tituloHello {
-        margin-top: 10vh;
-        font-size: 8vh;
-    }
-    #cardBoard div p {
-        margin-top: 5vh;
-        font-size: 3vh;
-    }
-    #cardBoard div ul{
-        margin-top: 0;
-        display: inline-flex;
-        width: 4vh;
-        color: #ffffff;
-        list-style: none;
-    }
-    #cardBoard div ul li img{ 
-        width: 10vh;
-        margin-right: 0.5vh;
-        list-style: none;
-    }
-    #cardBoard div ul li #HtmlIcon{ 
-        width: 10vh;
-        margin-right: -1vh;
-        list-style: none;
-    }
-    #cardBoard div p{ 
-        color: #ebebebe7;
-    }
-    #cardBoard div ul li #JsIcon{ 
-        width: 7vh;
-        margin-right: 1vh;
-    }
-
-    #Corpo-About{
-        padding: 0;
-        width: 85vw;
-        height: 75vh;
-        background-color: #6d43c291;
-        display:inline-flex;
-        border: 2px solid black ;
-        border-radius: 100px 0px 0px 100px;
-        position: absolute;
-        
-        margin-left: 15%;
-        margin-top: 10vh;
-        box-shadow: 5px 5px rgb(36, 36, 36);
-    }
-    #Corpo-About::after{
-       content: "<ABOUT ME/>";
-       color: #ebebebe7;
-       text-shadow: 2px 2px rgba(103, 36, 129, 0.925);
-       margin-left: 18vw;
-       margin-top: -10%;
-       font-size: 5vh;
-    }
-    
-     #fundo-img{
-        display: none;
-    }
-    
-    #areaTextoAbout{
-        position: absolute;
-        margin-left: 25vw;
-        margin-top: 5vh;
-        padding-right: 10vw;
-    }
-    #areaTextoAbout p{
-        text-align: justify;
-        font-size: 2vh;
-        color: #ebebebe7;
-        text-shadow: 5px 1px #301d55;
-    }
-
 
 
 }

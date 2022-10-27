@@ -11,7 +11,7 @@ import Projetos from './pasta/Projects'
 function App() {
   
   return (
-    <HashRouter>
+  <HashRouter>
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/about' element={<About/>}/>

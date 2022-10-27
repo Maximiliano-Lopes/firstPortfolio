@@ -3,69 +3,96 @@
 * {
     font-family: 'Josefin Sans', sans-serif;
     color: #1b1131;
-    transition-duration: 0.5s;
-    font-size: 2vh;
+    
 }
 
-@media screen  and (min-width:290px) and (max-width:450px) {
+@media screen  and (min-width:290px) and (max-width:480px) {
     #body{
         background-image: url("../images/fundo.jpg");
-        
-            background-position-x: 10%;
-            background-repeat: no-repeat;
-            backdrop-filter: blur(10%);
+        background-position-x: 10%;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(10%);
     }
-    #emailIcon,
-    #linkedinIcon,
-    #githubIcon,
-    #whatsappIcon
-    {
-        display: none;
+    #IconesRedesCelular.active{
+        display: flex;
+        height: max-content;
+        background-color: #6d43c2a8;
+        margin-top: 151%;
+
     }
     
+    #IconesRedesCelular.active ul li{
+        display: inline-block;
+        
+        padding-right: 6vw;
+    }
+    
+    #IconesRedesCelular.active ul li a img{
+        display: inline;
+        width: 16vw;
+    }
+    #RodaPeSideCelular{
+        position: absolute;
+        margin-top: 21%;
+        margin-left: 20%;
+        display: inline-block;
+        color: rgba(0, 0, 0, 0.815);
+        padding: 0vw;
+        padding-right: 1vh;
+    }
     #sideBar.active {
         margin-left: 0;
-        width: 100vw;
-        height: 12vh;
+        width: 100%;
+        height:max(10vw, 13vh) ;
         padding-bottom: 3vh;
         border-bottom: 2px solid black ;
         display: flex;
         font-family: 'Josefin Sans', sans-serif;
-        font-size: 2vh;
+        font-size: 2vw;
+        
         background: linear-gradient(
       to bottom, 
       #915bfd 62%,#8353e2 38%
+      
     );
 
     }
     #sideBar.active ul li{
         display: inline-block;
-        text-decoration: none;
-        padding-right: 1vw;
-        margin-left: 2vw;
+        width: max-content;     
+        padding-right: 5vw;
         
+        font-size: 4vw;
+        text-align: center;
         
     }
     #sideBar.active ul{
+        width: max-content;
+        align-items: center;
         text-decoration: none;
-        transition-delay: 1s;
+        margin-top: min(-0.5vh, -1.5vw);
+        margin-left: 4em;
+        padding: 0;
+        
     }
     #sideBar ul{
-        margin-top: -1vh;
+        margin-top: -2vh;
+        width: max-content;
+
     }
     #sideBar.active ul li a{
         text-decoration: none;
     }
     #sideBarTitle.active {
         margin-top: 2vh;
-        margin-left: 20vw;
-        font-size: 5vh;
+        margin-left: 9vw;
+        font-size: 10vw;
     }
     #sideBarTitle {
         letter-spacing: 1vw;
         margin-top: 2vh;
         margin-left: 9vw;
-        font-size: 5vh;
+        font-size: 10vw;
         color: white;
         text-shadow: 1px 2px 1px black;
     }
@@ -83,7 +110,7 @@
         width: 3vh;
         height: 3vh;
         margin-top: 3vh;
-        margin-left: 90vw;
+        margin-left: 88vw;
         
 
         background: linear-gradient(
@@ -97,6 +124,7 @@
     }
     #sideBar ul li{
         display: none;
+        
     }
     #sideBar{
         margin-left: 0;
@@ -105,7 +133,7 @@
         padding-bottom: 3vh;
         border-bottom: 2px solid black ;
         display: flex;
-        transition: 0.5s;
+        transition: 0.4s;
         font-size: 3vh;
         font-family: 'Josefin Sans', sans-serif;
         background-color: #915bfd;
@@ -136,7 +164,7 @@
         z-index: 2;
         position: absolute;
         margin-top: 2vh;
-        margin-left: 60vw;
+        margin-left: 65vw;
         display: inline-flex;
         border-radius: 100%;
         border: 1px solid black;
@@ -154,9 +182,9 @@
         z-index: 1;
         position: absolute;
         text-align: justify;
-        margin-top: 20vh;
+        margin-top: 10vh !important;
         margin-left: 5vw;
-        width: 70vw;
+        width: 75vw;
         height: 35vh;
         background-color: #915bfd;
         border-radius: 10%;
@@ -190,7 +218,7 @@
     }
 
     #cardBoard div ul{
-        margin-top: 0%;
+        margin-top: -5%;
         margin-left: 10vw;
         display: inline-flex;
         width: 4vh;
@@ -607,8 +635,8 @@
 
         border: 4px solid;
         border-radius: 100%;
-        width: 2%;
-        height: 4%;
+        width: 4vh !important;
+        height: 4vh !important;
         margin-top: 50vh;
         margin-left: 15vw;
         transition: 0.6s;
